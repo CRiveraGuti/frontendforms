@@ -1,0 +1,64 @@
+<div class=row>
+    <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0">
+    </div>
+
+    <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">   
+
+        <mat-accordion>
+            <mat-expansion-panel>
+            <mat-expansion-panel-header style="background-color: #ecac0d ">
+                <mat-panel-title>
+                   <strong> CONTROLES Y CRITERIOS DE ACEPTACIÓN EN PRODUCCIÓN </strong>
+                </mat-panel-title>
+            </mat-expansion-panel-header> 
+            <br>             
+          
+            <div class="row">   
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <mat-card style="width: 300px; height: 250px;">
+                        <div style="display: block">
+                        <canvas baseChart
+                                [datasets]="barChartData"
+                                [labels]="barChartLabels"
+                                [options]="barChartOptions"
+                                [colors]="barChartColors"
+                                [legend]="barChartLegend"
+                                [chartType]="barChartType"></canvas>
+                            <p>
+                                ¿Programo y paso todas las botellas de prueba?             
+                        </p>      
+                        </div>
+                        
+                    </mat-card>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                      <mat-card style="width: 300px; height: 250px;">
+                          <div style="display: block">
+                          <canvas baseChart
+                                  [datasets]="barChartData2"
+                                  [labels]="barChartLabels2"
+                                  [options]="barChartOptions"
+                                  [colors]="barChartColors"
+                                  [legend]="barChartLegend"
+                                  [chartType]="barChartType"></canvas>
+                              <p>
+                                  registro en este control proceso todos los pasos de botella aprobados y no aprobados        
+                          </p>      
+                          </div>
+                          
+                      </mat-card>
+                </div> 
+                
+            </div>
+      </mat-expansion-panel>
+      </mat-accordion>   
+    </div>
+
+    <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0">
+      
+    </div>
+
+</div>
+
+

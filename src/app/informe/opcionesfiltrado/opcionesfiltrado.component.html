@@ -1,0 +1,103 @@
+<div class="row">
+    <div style="text-align: center" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+      <h5> OPCIONES DE FILTRADO </h5>
+      <br>
+    </div>
+
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+
+    </div>
+
+    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
+
+        <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Operario
+                </mat-panel-title>
+                <mat-panel-description>
+                  Opcion de filtrado por operario
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+          
+              <div class="row">
+                  <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+  
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"> 
+                      <input type="text" class="form-control"  placeholder="Nombre del operario" name="operario" [(ngModel)]="operario" > <br> 
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"> 
+                      <button type="button" class="d-none d-xl-inline btn btn-primary" (click)="mostraroperario()"> Generar Reportes </button>
+                  </div>
+                </div> 
+              
+             </mat-expansion-panel>
+          
+            <mat-expansion-panel >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Fecha
+                </mat-panel-title>
+                <mat-panel-description>
+                    Opcion de filtrado por fecha
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"> 
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker"  placeholder="Escoja fecha" name="fecha" [(ngModel)]="fecha">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"> 
+                    <button type="button" class="d-none d-xl-inline btn btn-primary" (click)="mostraroperario()"> Generar Reportes </button>
+                </div>
+              </div> 
+            </mat-expansion-panel>
+
+            <mat-expansion-panel >
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Producto
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Opcion de filtrado por producto
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                 
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+    
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"> 
+                        <mat-form-field>
+                            <mat-select placeholder="Seleccione el producto" name="producto" [(ngModel)]="producto">
+                              <mat-option *ngFor="let producto of Productos" [value]="producto.value" >
+                                {{producto.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"> 
+                        <button type="button" class="d-none d-xl-inline btn btn-primary" (click)="mostraroperario()"> Generar Reportes </button>
+                    </div>
+                  </div> 
+
+              </mat-expansion-panel>
+
+          </mat-accordion>
+          
+
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+
+    </div>
+
+</div>
+

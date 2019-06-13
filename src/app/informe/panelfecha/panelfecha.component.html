@@ -1,0 +1,32 @@
+<div *ngIf="mensajedeerror && mensajedeerror != null">
+    
+    <div class="alert alert-warning" role="alert">
+        {{mensajedeerror}}
+    </div>
+
+</div>
+
+<div *ngIf="mensajedeerror == null">
+
+    <br>
+    <app-primersetderadios [setradio1] = "setradio1"></app-primersetderadios>
+    <br>
+    <app-segundosetderadios [setradio2] = "setradio2"></app-segundosetderadios>
+    <br>
+    <app-tercersetderadios [setradio3] = "setradio3"></app-tercersetderadios>
+    <br>
+    <div class="row">
+        <div class= "col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+           <app-indicadordeturno [porcentaje] = "porcentaje"></app-indicadordeturno>
+        </div>
+    
+        <div class= "col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <app-tipoderechazo [defecto] = "defecto"></app-tipoderechazo>
+            <br>
+        </div>
+     
+    <app-errorpor [setradio4] = "setradio4"></app-errorpor>
+    
+    </div> 
+
+</div>

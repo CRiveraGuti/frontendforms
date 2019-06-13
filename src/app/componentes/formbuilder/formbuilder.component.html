@@ -1,0 +1,41 @@
+<div class="row">
+<div class="col-sm-1">
+
+</div>
+<div class="col-sm-12">
+        <div class="alert alert-success" role="alert" *ngIf="alertmessage && alertmessage != null ">
+                {{ alertmessage}}
+        </div>
+    Filtrar: <input type="text" class="form-control"  placeholder="Nombre del formulario" name="filtrar" [(ngModel)]="filtrar" > <br>  
+    <table class="table">
+        <thead class="thead-light"> 
+            <th scope="col"> Identificador </th>
+            <th scope="col"> Nombre Formulario </th>
+            <th scope="col"> Administrar </th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let form of Forms | filter:filtrar | paginate: { itemsPerPage: 5, currentPage: p }">
+                <td > {{ form._id | slice:1:5}}  </td>
+                <td> {{ form.nombre}}</td>
+                <td> 
+                    <button type="button" class="d-none d-xl-inline btn btn-primary" (click)="actualizar(form._id)"> Actualizar </button>
+                    <button type="button" class="d-none d-xl-inline btn btn-primary" (click)="eliminar(form._id)"> Eliminar </button>
+                    <button type="button" class="d-none d-xl-inline btn btn-primary" (click)="renderizar(form._id)"> Visualizar </button>
+                    <button type="button" class="d-none d-xl-inline btn btn-primary" (click)="reporte()"> Ir a reportes </button>
+                    
+                    <button type="button" class="d-lg-none btn btn-primary" (click)="actualizar(form._id)">  <i class="material-icons md-10">restore</i> </button>
+                    <button type="button" class="d-lg-none btn btn-primary" (click)="eliminar(form._id)">  <i class="material-icons">delete</i> </button>
+                    <button type="button" class="d-lg-none btn btn-primary" (click)="renderizar(form._id)">  <i class="material-icons">search</i> </button>
+                    <button type="button" class="d-lg-none btn btn-primary" (click)="reporte()"> <i class="material-icons">bar_chart</i> </button>
+                </td>
+            </tr>
+        </tbody>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        <button type="button" class="btn btn-primary" (click)="crear()"> Crear </button>
+    </table>
+
+</div>
+<div class="col-sm-1">
+
+</div>
+</div>

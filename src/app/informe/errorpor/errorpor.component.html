@@ -1,0 +1,162 @@
+<div class=row>
+    <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0">
+    </div>
+    
+    <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12"> 
+    <mat-accordion>
+        <mat-expansion-panel>
+        <mat-expansion-panel-header style="background-color: #ecac0d ">
+            <mat-panel-title>
+               <strong> CONTROLES Y CRITERIOS DE ACEPTACIÓN EN ARRANQUE DE PRODUCCIÓN Y/O CAMBIO DE PRODUCTO </strong>
+            </mat-panel-title>
+        </mat-expansion-panel-header> 
+        <br>             
+            <div class="row">   
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <mat-card style="width: 300px; height: 250px;">
+                            <div style="display: block">
+                            <canvas baseChart
+                                    [datasets]="barChartData"
+                                    [labels]="barChartLabels"
+                                    [options]="barChartOptions"
+                                    [colors]="barChartColors"
+                                    [legend]="barChartLegend"
+                                    [chartType]="barChartType"></canvas>
+                                <p>
+                                    VERIFICO SISTEMA SEGURIDAD PUERTAS
+                            </p>      
+                            </div>
+                            
+                    </mat-card>
+            </div>    
+            
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData2"
+                        [labels]="barChartLabels2"
+                        [options]="barChartOptions"
+                        [colors]="barChartColors"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                        ¿VERIFICO PARADAS DE EMERGENCIA? 
+                    </p>      
+                </div>
+                
+            </mat-card>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData3"
+                        [labels]="barChartLabels"
+                        [colors]="barChartColors"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                        ¿VERIFICO SENSORES DE ENTRADA INSPECTOR?
+                    </p>      
+                </div>    
+            </mat-card>
+            <br>
+            </div>
+        
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData4"
+                        [labels]="barChartLabels"
+                        [colors]="barChartColors"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                  VERIFICO OPERACIÓN SENSORES MICROSONICOS?
+                    </p>      
+                </div>    
+            </mat-card>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [colors]="barChartColors"
+                        [datasets]="barChartData5"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                        ¿VERIFICO BOMBA VACIO ESTA TRABAJANDO BIEN?      
+                </p>      
+                </div>    
+            </mat-card>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData6"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [colors]="barChartColors"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                        ¿EL VACIO ES MAYOR A 10 IN-Hg?
+                    </p>      
+                </div>    
+            </mat-card>
+            <br>
+            </div>
+        
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData7"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [colors]="barChartColors"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                        ¿LA PRESION DE AIRE ESTA A MAYOR A 60 PSI?    
+                </p>      
+                </div>    
+            </mat-card>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData8"
+                        [labels]="barChartLabels2"
+                        [colors]="barChartColors"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                        ¿APLICO SAM Y LOTO EN SUS TAREAS DIARIAS?
+                </p>      
+                </div>    
+            </mat-card>
+            </div>        
+                </div>
+        </mat-expansion-panel>
+    </mat-accordion>   
+    </div> 
+    
+    <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0">
+    </div>
+
+</div> 

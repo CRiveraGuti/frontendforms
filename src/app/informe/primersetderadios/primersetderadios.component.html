@@ -1,0 +1,163 @@
+  <div class=row>
+    <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0">
+    </div>
+    
+    <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12"> 
+    <mat-accordion>
+        <mat-expansion-panel>
+        <mat-expansion-panel-header style="background-color: #ecac0d ">
+            <mat-panel-title>
+               <strong> CONTROLES Y CRITERIOS DE ACEPTACIÓN EN ARRANQUE DE PRODUCCIÓN Y/O CAMBIO DE PRODUCTO </strong>
+            </mat-panel-title>
+        </mat-expansion-panel-header> 
+        <br>             
+            <div class="row">   
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <mat-card style="width: 300px; height: 250px;">
+                            <div style="display: block">
+                            <canvas baseChart
+                                    [datasets]="barChartData"
+                                    [labels]="barChartLabels"
+                                    [options]="barChartOptions"
+                                    [colors]="barChartColors"
+                                    [legend]="barChartLegend"
+                                    [chartType]="barChartType"></canvas>
+                                <p>
+                                ¿El Líder del Equipo El Shift revisó que las botellas de prueba están limpias y en buen estado?  
+                            </p>      
+                            </div>
+                            
+                    </mat-card>
+            </div>    
+            
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData2"
+                        [labels]="barChartLabels2"
+                        [options]="barChartOptions"
+                        [colors]="barChartColors"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                ¿Pasó las botellas de prueba al inicio de producción, el equipo Acepto y ud registro la prueba?    
+                </p>      
+                </div>
+                
+            </mat-card>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData3"
+                        [labels]="barChartLabels"
+                        [colors]="barChartColors"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                    ¿Arranque de producción y / o cambio de producto ?:    
+                </p>      
+                </div>    
+            </mat-card>
+            <br>
+            </div>
+        
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData4"
+                        [labels]="barChartLabels2"
+                        [colors]="barChartColors"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                        Revisar el rechazo de las primeras 1000 botellas, ¿Presenta falso rechazo?                  
+                </p>      
+                </div>    
+            </mat-card>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [colors]="barChartColors"
+                        [datasets]="barChartData5"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                        Si presento falso rechazo ¿El equipo fue ajustado?             
+                </p>      
+                </div>    
+            </mat-card>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData6"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [colors]="barChartColors"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                        ¿El ajuste del formato de la inspección es correcto en el equipo?              
+                </p>      
+                </div>    
+            </mat-card>
+            <br>
+            </div>
+        
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData7"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [colors]="barChartColors"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                ¿Pasó las botellas de prueba al inicio de producción, el equipo Acepto y ud registro la prueba?    
+                </p>      
+                </div>    
+            </mat-card>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <mat-card style="width: 300px; height: 250px;">
+                <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData8"
+                        [labels]="barChartLabels2"
+                        [colors]="barChartColors"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"></canvas>
+                    <p>
+                    ¿se le hicieron correcciones al mismo?
+                </p>      
+                </div>    
+            </mat-card>
+            </div>        
+                </div>
+        </mat-expansion-panel>
+    </mat-accordion>   
+    </div> 
+    
+    <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0">
+    </div>
+
+</div> 
+   

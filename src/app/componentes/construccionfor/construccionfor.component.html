@@ -1,0 +1,17 @@
+<form>
+    <div class="alert alert-success" role="alert" *ngIf="alertmessage && alertmessage != null">
+       {{ alertmessage }}
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="alerterror && alerterror != null">
+        {{ alerterror }}
+    </div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-10 container" >
+<input type="text" class="form-control"  placeholder="Nombre del formulario" name="nombre" [(ngModel)]="nombre" > <br>  
+<form-builder [form]="form" (change)="onChange($event)"></form-builder>
+<div class="well jsonviewer" hidden>
+  <pre id="json"><code class="language-json" #json ></code></pre>
+</div>
+<br>
+<button type="submit" class="btn btn-primary" (click)="guardar()">Guardar</button>
+</div>
+</form>
